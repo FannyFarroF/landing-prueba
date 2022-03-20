@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap');
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root {
+    --primary-bg-color: #2A50E8;
+    --secondary-bg-color: #c75d5f;
+    --whats-bg-color: #2CB742;
+    --text-bg-color: #ffffff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #444;
+    overflow-x: hidden;
+}
+
+a {
+    color: #4fa6d5;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #45beff;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-primary {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button,
+a {
+    transition: 0.5s all;
+}
+
+button:hover {
+    opacity: 0.90;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+.btn-login {
+    background: #fff;
+    border-radius: 25px;
+    border: 2px solid var(--primary-bg-color);
+    color: var(--primary-bg-color) !important;
+    font-weight: 600;
+}
+
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+
+#hero {
+    background: #f9f9f9;
+}
+
+.title-hero {
+    font-size: 2rem;
+}
+
+#hero .info {
+    color: var(--primary-bg-color);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.back-primary {
+    color: var(--primary-bg-color);
+}
+
+.description span {
+    color: rgb(80, 80, 80);
+}
+
+.btn-download {
+    border: 2px solid var(--secondary-bg-color);
+    color: var(--secondary-bg-color) !important;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    max-width: 180px;
+}
+
+.btn-download .txt {
+    line-height: 1.2rem;
+}
+
+.score i {
+    color: #FFDC64;
+}
+
+.students {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.course-info {
+    position: absolute;
+    width: 280px;
+    right: 0;
+    top: 50px;
+    z-index: 99999999;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 11%);
+    border-radius: 0 0 5px 5px;
+}
+
+.header-content-course figure {
+    height: 160px;
+    background: #2CB742;
+}
+
+.header-content-course figure img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.not {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    background: red;
+}
+
+.popup {
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup i {
+    color: #2A50E8;
+}
+
+.txt {
+    font-size: 0.9rem;
+}
+
+.title-txt {
+    color: red;
+    font-weight: 600;
+}
+
+.txt .offert {
+    text-decoration: line-through;
+    color: #444;
+}
+
+.btns button {
+    border: 0;
+    border: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-whats {
+    background: var(--whats-bg-color);
+    color: #fff;
+}
+
+.btn-info-course {
+    background: var(--primary-bg-color);
+    color: #fff;
+}
+
+.btn-card {
+    border: 2px solid var(--primary-bg-color) !important;
+    color: var(--primary-bg-color);
+    background: #fff;
+}
+
+.w-65 {
+    width: 65% !important;
+    padding-left: 80px;
+}
+
+.footer-content-course {
+    background: rgb(238, 238, 238);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+    .navbar-brand img {
+        width: 180px !important;
+    }
+    .container {
+        width: 90% !important;
+        margin: auto;
+    }
+    .starts {
+        flex-direction: column;
+    }
+    .starts .students {
+        margin-top: 8px;
+        margin-left: 0 !important;
+    }
+    .title-hero {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .w-65 {
+        width: 100% !important;
+        padding-left: 0 !important;
+    }
+    #hero {
+        padding-top: 35px;
+    }
+    .course-info {
+        position: initial !important;
+        width: 100% !important;
+    }
+    .course-info .body-content-course,
+    .course-info .footer-content-course {
+        display: none;
+    }
+    .list-cards {
+        flex-wrap: wrap;
+    }
+    .cards-details .item {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Details cards
+--------------------------------------------------------------*/
+
+.cards-details .item {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 22%;
+    font-size: 14px;
+}
+
+.cards-details .item i {
+    color: var(--primary-bg-color)
+}
+
+.item-second i {
+    color: red !important;
+}
